@@ -1,0 +1,11 @@
+<doctrine-mapping xmlns="https://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\SensorReading\Domain\SensorReading" table="sensor_reading">
+        <embedded name="id" id="true" class="App\SensorReading\Domain\SensorReadingId" />
+        <embedded name="temperature" class="App\SensorReading\Domain\Temperature" />
+        <field name="timestamp" column="timestamp" type="datetime_immutable" />
+    </entity>
+</doctrine-mapping>

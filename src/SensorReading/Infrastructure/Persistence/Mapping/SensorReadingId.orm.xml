@@ -1,0 +1,10 @@
+<doctrine-mapping xmlns="https://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <embeddable name="App\SensorReading\Domain\SensorReadingId">
+        <id name="readingId" column="reading_id" type="string" />
+        <id name="sensorId" column="sensor_id" type="string" />
+    </embeddable>
+</doctrine-mapping>

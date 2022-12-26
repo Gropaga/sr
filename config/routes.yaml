@@ -1,0 +1,11 @@
+controllersSensorReadingsWeb:
+    resource: ../src/SensorReading/Bridge/Controller/Web
+    type: annotation
+
+controllersSensorReadingsRest:
+    resource: ../src/SensorReading/Bridge/Controller/Rest
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
